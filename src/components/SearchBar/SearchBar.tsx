@@ -1,5 +1,6 @@
 import css from '../SearchBar/Search.Bar.module.css'
-import { Formik, Form, Field, FormikHelpers } from "formik";
+import { Formik, Form, Field } from "formik";
+import type { FormikHelpers } from "formik";
 import toast from 'react-hot-toast'
 
 interface SearchBarProps{
