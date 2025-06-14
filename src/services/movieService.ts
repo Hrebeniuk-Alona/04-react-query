@@ -9,7 +9,7 @@ interface MovieHttpResponse{
 }
 
 
-export const fetchMovies = async (newQuery:string, page:number) => {
+export const fetchMovies = async (newQuery:string, page:number):Promise<MovieHttpResponse> => {
     const response = await axios.get<MovieHttpResponse>('https://api.themoviedb.org/3/search/movie', {
         params: {
             query: newQuery,
